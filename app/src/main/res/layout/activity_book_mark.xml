@@ -74,12 +74,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@color/aquaMarine"
             android:padding="@dimen/distance_10dp"
             app:srcCompat="@drawable/ic_home_page_48_white" />
 
         <ImageView
             android:id="@+id/nav_bookmark"
+            android:background="@color/aquaMarine"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
