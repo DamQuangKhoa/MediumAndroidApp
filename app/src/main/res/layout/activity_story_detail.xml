@@ -1,9 +1,204 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StoryDetail">
+    android:background="@color/background">
 
-</android.support.constraint.ConstraintLayout>
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:src="@drawable/icons8_go_back_48"
+
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/icons8_infinity_48" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/left"
+            android:layout_marginTop="@dimen/distance_10dp"
+            android:background="@color/grey"></LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_55dp"
+        android:layout_below="@id/header"
+        android:orientation="horizontal"
+        android:weightSum="8">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/distance_5dp"
+            android:src="@drawable/etherum"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:orientation="vertical"
+            android:padding="@dimen/distance_5dp"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/promotion_0dp"
+                android:layout_weight="2"
+                android:text="Black Jaw"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/promotion_0dp"
+                android:layout_weight="1"
+                android:text="Nong Lam University "
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/promotion_0dp"
+                android:layout_weight="1"
+                android:text="Septemper 21. 6 min read"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view"
+        android:layout_below="@+id/user"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/left"
+            android:background="@color/grey"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/distance_10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Everything I Can Remember"
+                android:textSize="@dimen/text_20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notes on a lifetime as a woman " />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Content"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/background"
+        android:layout_marginBottom="@dimen/distance_20dp"
+        android:layout_marginRight="@dimen/distance_15dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/icons8_facebook_like_48" />
+
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/footer"
+        android:background="@color/grey"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background"
+        android:orientation="horizontal"
+        android:padding="@dimen/distance_10dp"
+        android:weightSum="10">
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/icons8_redo_52" />
+
+        <ImageButton
+            android:id="@+id/bookmark_detail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/icons8_bookmark_48_white" />
+
+        <TextView
+            android:layout_width="@dimen/promotion_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4" />
+
+        <TextView
+            android:layout_width="@dimen/promotion_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="19.7K Claps"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_10sp" />
+
+        <TextView
+            android:layout_width="@dimen/promotion_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="232 Responses"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_10sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
