@@ -298,7 +298,7 @@
         <ImageView
             android:id="@+id/nav_home"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:padding="@dimen/distance_10dp"
             app:srcCompat="@drawable/ic_home_page_48_white" />
@@ -306,7 +306,7 @@
         <ImageView
             android:id="@+id/nav_bookmark"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:padding="@dimen/distance_10dp"
             app:srcCompat="@drawable/icons8_bookmark_48_white" />
@@ -314,7 +314,7 @@
         <ImageView
             android:id="@+id/nav_notify"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:padding="@dimen/distance_10dp"
             app:srcCompat="@drawable/icons8_notification_48" />
@@ -322,7 +322,7 @@
         <ImageView
             android:id="@+id/nav_menu"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:padding="@dimen/distance_10dp"
             app:srcCompat="@drawable/icons8_menu_48_white" />
@@ -330,7 +330,7 @@
         <ImageView
             android:id="@+id/nav_person"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/aquaMarine"
             android:padding="@dimen/distance_10dp"
