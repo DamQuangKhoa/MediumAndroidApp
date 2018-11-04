@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BookMarkActivity">
+        <activity android:name=".StoryDetail">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,7 +19,9 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".UserActivity" />
         <activity android:name=".WriteCreateStoryActivity" />
-        <activity android:name=".StoryDetail"></activity>
+        <activity android:name=".BookMarkActivity" />
+        <activity android:name=".YourStories" />
+        <activity android:name=".SignUpActivity"></activity>
     </application>
 
 </manifest>

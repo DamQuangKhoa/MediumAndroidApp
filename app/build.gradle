@@ -29,7 +29,8 @@ dependencies {
 
     implementation 'com.android.support:recyclerview-v7:26.1.0'
     compile 'com.android.support:cardview-v7:26.1.0+'
-    compile 'de.hdodenhof:circleimageview:2.1.0'      // use this or use the latest compile version. In case u get bug.
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    // use this or use the latest compile version. In case u get bug.
 
 
     implementation 'com.android.support:design:26.1.0'
