@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:paddingBottom="@dimen/distance_10dp"
+            android:paddingTop="@dimen/distance_10dp"
+            android:src="@drawable/icons8_go_back_48"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/distance_10dp"
+            android:paddingTop="@dimen/distance_10dp"
+            android:text="Custommize your interests"
+            android:textAlignment="center"
+            android:textColor="@color/menu_bg"
+            android:textSize="@dimen/text_20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/left"
+            android:background="@color/grey"></LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/distance_10dp"
+                android:text="People"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/distance_10dp"
+                android:text="Publication" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/distance_10dp"
+                android:text="Topics" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/left"
+            android:background="@color/grey"></LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nav"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/distance_10dp"
+                android:text="See all people you follow"
+                android:textSize="@dimen/text_16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_48dp"
+                android:layout_alignParentRight="true"
+                android:paddingRight="25dp"
+                android:src="@drawable/icons8_redo_52" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/left"
+            android:background="@color/grey"></LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sub_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:background="@color/grey1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="More people to follow"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sub_title"
+        android:layout_above="@+id/footer"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_55dp"
+            android:layout_below="@id/header"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/distance_5dp"
+                android:src="@drawable/etherum"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:padding="@dimen/distance_5dp"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/promotion_0dp"
+                    android:layout_weight="2"
+                    android:text="Dam Quang Khoa "
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/promotion_0dp"
+                    android:layout_weight="2"
+                    android:text="Nong Lam University- Full-Stack Developer "
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:padding="@dimen/distance_10dp"
+                android:src="@drawable/icons8_bookmark_48_white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"></LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/user_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_55dp"
+            android:layout_below="@id/header"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/distance_5dp"
+                android:src="@drawable/etherum"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:padding="@dimen/distance_5dp"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/promotion_0dp"
+                    android:layout_weight="2"
+                    android:text="Mai The Nguyen "
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/promotion_0dp"
+                    android:layout_weight="2"
+                    android:text="Nong Lam University"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:padding="@dimen/distance_10dp"
+                android:src="@drawable/icons8_bookmark_48_white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"></LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:background="@color/menu_bg"
+        android:textColor="@color/background"
+        android:textStyle="bold"
+        android:text="Publication to follow" />
+</RelativeLayout>

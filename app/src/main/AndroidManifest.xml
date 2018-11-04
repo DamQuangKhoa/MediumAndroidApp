@@ -21,11 +21,13 @@
         <activity android:name=".WriteCreateStoryActivity" />
         <activity android:name=".BookMarkActivity" />
         <activity android:name=".YourStories" />
-        <activity android:name=".SignUpActivity"></activity>
+        <activity android:name=".SignUpActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".CustomizeInterest"></activity>
     </application>
 
 </manifest>
