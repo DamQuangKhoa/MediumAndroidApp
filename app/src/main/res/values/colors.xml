@@ -97,4 +97,8 @@
     <color name="black80">#cc000000</color>
     <color name="azulTwo">#1782e8</color>
     <color name="menu_bg">#7c27ca</color>
+    <color name="pink">#FF69B4</color>
+    <color name="text_blue">#7b2bc6</color>
+    <color name="btn_blue">#3837f4</color>
+    <color name="btn_pink">#ff6469</color>
 </resources>
