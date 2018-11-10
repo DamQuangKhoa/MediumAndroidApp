@@ -13,6 +13,7 @@
         >
 
         <TextView
+            android:id="@+id/news_type"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
@@ -29,6 +30,7 @@
             android:weightSum="10">
 
             <TextView
+                android:id="@+id/news_title"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="@dimen/distance_8dp"
@@ -37,11 +39,12 @@
                 android:textSize="@dimen/text_16sp"
                 android:textStyle="bold" />
 
-            <android.support.v7.widget.AppCompatImageView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="3"
-                android:background="@drawable/bg_button_green" />
+          <android.support.v7.widget.AppCompatImageView
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="3"
+              android:src="@drawable/etherum"
+              />
         </LinearLayout>
 
         <LinearLayout
@@ -52,11 +55,11 @@
             android:weightSum="2">
 
             <TextView
+                android:id="@+id/news_author_name"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="Mai The Nguyen"
-                />
+                android:text="Mai The Nguyen" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -66,26 +69,26 @@
                 android:weightSum="10">
 
                 <TextView
+                    android:id="@+id/news_publish_date"
                     android:layout_width="@dimen/promotion_0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="3"
-                    android:text="11 Apr"
-                    />
+                    android:text="11 Apr" />
 
                 <TextView
+                    android:id="@+id/news_time_read"
                     android:layout_width="@dimen/promotion_0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="5"
-                    android:text="6 min read"
-                    />
+                    android:text="6 min read" />
 
                 <ImageButton
+                    android:id="@+id/news_btn_bookmark"
                     android:layout_width="@dimen/promotion_0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
-                    android:src="@drawable/icons8_bookmark_48_white"
                     android:background="@null"
-                    />
+                    android:src="@drawable/icons8_bookmark_48_white" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
